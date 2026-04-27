@@ -2,104 +2,131 @@
 
 ## 📌 Overview
 
-This project presents an interactive **Automobile Sales Dashboard** built using **Python, Dash, and Plotly**. It enables dynamic exploration of automobile sales data, providing insights into **yearly trends, recession impacts, vehicle category performance, and economic influences** such as unemployment rates.
+This project presents an interactive Automobile Sales Dashboard built using Python, Dash, and Plotly. It enables dynamic exploration of automobile sales data, providing insights into yearly trends, recession impacts, vehicle category performance, and economic influences such as unemployment rates.
 
-Unlike static reports, this dashboard focuses on **interactive visual analytics**, allowing users to switch between different statistical views and gain deeper understanding through real-time visualizations.
+Unlike static reports, this dashboard focuses on interactive visual analytics, allowing users to switch between different statistical views and gain deeper understanding through real-time visualizations.
 
 ---
 
 ## 🎯 Objectives
 
-* Analyze automobile sales trends over time  
-* Evaluate the impact of recession periods on sales performance  
-* Compare sales across different vehicle types  
-* Examine advertising expenditure distribution  
-* Understand the relationship between unemployment rate and automobile sales  
+- Analyze automobile sales trends over time  
+- Evaluate the impact of recession periods on sales performance  
+- Compare sales across different vehicle types  
+- Examine advertising expenditure distribution  
+- Understand the relationship between unemployment rate and automobile sales  
 
 ---
 
 ## 🧠 Methodology
 
-### 1. Data Collection
-
+### Data Collection
 The dataset is sourced from IBM Cloud and includes:
+- Year and Month  
+- Automobile Sales  
+- Vehicle Type  
+- Advertising Expenditure  
+- Unemployment Rate  
+- Recession Indicator  
 
-* Year and Month  
-* Automobile Sales  
-* Vehicle Type  
-* Advertising Expenditure  
-* Unemployment Rate  
-* Recession Indicator  
+### Data Processing
+- Loaded using Pandas  
+- Filtered based on user selection  
+- Aggregated using groupby()  
 
----
+### Dashboard Design
+- Built using Dash  
+- Interactive dropdowns  
+- Dynamic callbacks  
 
-### 2. Data Processing
-
-* Data is loaded using **Pandas**
-* Filtered based on:
-  * Selected year
-  * Recession periods
-* Aggregated using `groupby()` operations for visualization
-
----
-
-### 3. Dashboard Design
-
-The dashboard is built using **Dash**, enabling:
-
-* Interactive dropdown selections  
-* Dynamic updates using callbacks  
-* Real-time chart rendering  
-
----
-
-### 4. Visualization
-
-Multiple visualizations are created using **Plotly Express**, including:
-
-* Line charts  
-* Bar charts  
-* Pie charts  
+### Visualization
+- Line charts  
+- Bar charts  
+- Pie charts  
 
 ---
 
 ## 📊 Dashboard Components
 
 ### 🔹 Recession Period Analysis
-
-* **Line Chart:** Average automobile sales over recession years  
-* **Bar Chart:** Average sales by vehicle type  
-* **Pie Chart:** Advertising expenditure distribution  
-* **Bar Chart:** Impact of unemployment rate on sales  
-
----
+- Line chart: Sales trends over years  
+- Bar chart: Vehicle type comparison  
+- Pie chart: Advertising expenditure  
+- Bar chart: Unemployment impact  
 
 ### 🔹 Yearly Analysis
-
-* **Line Chart:** Year-wise automobile sales trend  
-* **Line Chart:** Monthly automobile sales  
-* **Bar Chart:** Vehicle type performance for selected year  
-* **Pie Chart:** Advertisement expenditure by vehicle type  
-
----
-
-## 📈 Why Interactive Dashboards?
-
-Traditional static analysis provides limited insight, whereas this dashboard allows users to:
-
-* Explore data dynamically  
-* Identify trends and anomalies  
-* Compare multiple dimensions in real-time  
-* Gain better decision-making insights  
+- Yearly sales trend  
+- Monthly sales  
+- Vehicle type performance  
+- Advertisement expenditure  
 
 ---
 
 ## 🧰 Technologies Used
 
-* **Python 3**  
-* **Pandas** – data manipulation  
-* **Dash** – interactive web framework  
-* **Plotly Express** – visualization  
-* **HTML/CSS (via Dash)** – layout design  
+- Python  
+- Pandas  
+- Dash  
+- Plotly  
+
+---
+
+## 📂 Project Structure
+
+automobile-sales-dashboard/
+│
+├── app.py
+├── requirements.txt
+└── README.md
+
+---
+
+## ⚙️ Installation & Setup
+
+git clone https://github.com/your-username/automobile-sales-dashboard.git  
+cd automobile-sales-dashboard  
+pip install -r requirements.txt  
+
+---
+
+## ▶️ How to Run the Project
+
+Step 1: Check Python installation  
+python --version  
+
+Step 2: Install required libraries  
+pip install dash pandas plotly  
+
+Step 3: Run the application  
+python app.py  
+
+Step 4: Open in browser  
+http://127.0.0.1:8050/  
+
+---
+
+## 📊 Expected Output
+
+- Interactive dashboard with dropdown filters  
+- Recession analysis charts  
+- Yearly analysis charts  
+- Dynamic updates  
+
+---
+
+## 📉 Limitations
+
+- Limited dataset  
+- No predictive modeling  
+- Basic UI  
+
+---
+
+## 🚀 Future Improvements
+
+- Add machine learning models  
+- Improve UI/UX  
+- Deploy online  
+- Add more filters  
 
 ---
